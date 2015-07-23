@@ -15,7 +15,7 @@ To run the demo, point the URL your webroot, followed by
     /ACS_PHP_Compress_Sample.
 
 ###Example
-  http://projecturl/???
+  http://projecturl/????
 
 
 
