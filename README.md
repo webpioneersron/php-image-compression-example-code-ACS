@@ -58,3 +58,6 @@ The beginning of the code checks for a post array and a files array before conti
 	        echo $uri;
 	}
 
+###Support
+If you have questions, please visit our online [help center](https://accusofthelp.zendesk.com/hc/en-us).
+
