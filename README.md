@@ -39,7 +39,7 @@ The beginning of the code checks for a post array and a files array before conti
 	$response = curl_exec($ch);
 	curl_close ($ch);
 
-####Create a new image from the image stream returned by the API and echo out to AJAX
+####Create a new image from the API response and echo out to AJAX
 	if ($imageType === "image/png") {
 		$uri = "data:image/png;base64," . base64_encode($response);
 	        echo $uri;
