@@ -17,7 +17,16 @@ To run the demo, point the URL your webroot, followed by `/ACS_PHP_Compress_Samp
 	
 ###Explanation
 The sample code package is a fully functioning example of the ACS compress service. The call to the API is made within compress.php. Walkthrough of the contents.
-####Check that the user provided a file
+####Check for a file upload
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $image );
+	curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+	$response = curl_exec($ch);
+	curl_close ($ch);
 
 
 
