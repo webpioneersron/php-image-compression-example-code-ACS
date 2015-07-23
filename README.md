@@ -10,8 +10,7 @@ The Accusoft Cloud Services image compression API gives you faster image compres
 The installation is a one-step process, simply requiring to add the sample into your project's structure.
 
 ###Usage instructions
-To run the demo, point the URL your webroot, followed by
-	\/ACS_PHP_Compress_Sample
+To run the demo, point the URL your webroot, followed by `/ACS_PHP_Compress_Sample`
 
 ###Example
 	http://localhost/ACS_PHP_Compress_Sample
