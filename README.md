@@ -17,7 +17,18 @@ To run the demo, point the URL your webroot, followed by `/ACS_PHP_Compress_Samp
 	
 ###Explanation
 The sample code package is a fully functioning example of the ACS compress service. The call to the API is made within compress.php. Walkthrough of the contents.
+
 ####Check for a file upload
+The beginning of the code checks for a post array and a files array before continuing
+
+####Prepare data to pass into CURL
+	$image = file_get_contents($_FILES["file"]["tmp_name"]);
+	$imageType = $_FILES["file"]["type"];
+	$url = 'http://dev-api.accusoft.com/v1/imageReducers/'.$_FILES["file"]["name"];
+	$key = $_POST["acsKey"];
+	$header =  array('acs-api-key: '.$key);
+
+####API call
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
