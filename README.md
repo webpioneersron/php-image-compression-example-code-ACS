@@ -11,7 +11,7 @@ The installation is a one-step process, simply requiring to add the sample into 
 
 ###Usage instructions
 To run the demo, point the URL your webroot, followed by
-	/ACS_PHP_Compress_Sample
+	\/ACS_PHP_Compress_Sample
 
 ###Example
 	http://localhost/ACS_PHP_Compress_Sample
