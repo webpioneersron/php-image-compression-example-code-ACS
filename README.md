@@ -7,14 +7,15 @@ The following is sample code for compressing an image using PHP with Accusoft Cl
 The Accusoft Cloud Services (ACS) image compression API gives you faster image compression and decompression, and higher-quality images, saving you space for storing your images and improving the performance of your website and web applications. Compress JPG, PNG, and GIF files. Learn more about [Accusoft Cloud Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
 
 ###Installation
-The installation is a one-step process, simply add the sample into your project's structure.
+The installation is a one-step process: simply add the sample into your project's structure.
 
-Open config.php and replace everything within the quotes including the curly braces with a valid api key obtained for free from accusoft.com.
+Open **config.php** and replace everything within the quotes including the curly braces with a valid [api key](http://www.accusoft.com/portal/ "Get your api key") obtained for **free** from accusoft.com.
 
-{
-  "apiKey": "{{ valid key here }}"
-}
-This code will not function without a valid api key. Please sign up at www.accusoft.com/products/accusoft-cloud-services/portal/ to get your key.
+     {
+       "apiKey": "{{ valid key here }}"
+     }
+
+This code will not function without a valid api key. Please sign up at [www.accusoft.com/products/accusoft-cloud-services/portal/](http://www.accusoft.com/portal/ "Get your api key") to get your key.
 
 
 ###Usage instructions
