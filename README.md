@@ -23,15 +23,15 @@ This code will not function without a valid api key. Please sign up at [www.accu
 ###Usage instructions
 From within the subdirectory where you installed this code example, type
 
-    php app.php mode=Operation inputFile=source Image outputFile=Output Image after Compression
+    php app.php mode=reduce|help inputFile=<file> outputFile=<file>
 
-    OPERATION: mode= reduce | mode = help
-    inputFile: path to your image file, including filename
-    outputFile: path to your output file, including the filename
+            mode: reduce (or help to display this information)
+            inputFile: path to your image file, including filename
+            outputFile: path to your output file, including the filename
 
 ###Example
 
-	php app.php mode=reduce inputFile=../console/newimage.jpeg  outputFile=images/reducedImage.jpeg
+	php app.php mode=reduce inputFile=../console/newimage.jpeg outputFile=images/reducedImage.jpeg
 	
 ###Explanation
 The sample code package is a fully functioning example of the ACS compression service. The call to the API is made within app.php that Walkthrough of the contents and verify if the input file is an image with a correct path.
