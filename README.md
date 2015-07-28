@@ -4,10 +4,10 @@ The following is sample code for compressing an image using PHP with Accusoft Cl
 
 ###Overview
 
-The Accusoft Cloud Services image compression API gives you faster image compression, decompression and higher-quality images, saving you space for storing your images and improving the performance of your website and web applications. Compress JPG, PNG, and GIF files. Learn more about [Accusoft Cloud Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
+The Accusoft Cloud Services (ACS) image compression API gives you faster image compression and decompression, and higher-quality images, saving you space for storing your images and improving the performance of your website and web applications. Compress JPG, PNG, and GIF files. Learn more about [Accusoft Cloud Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
 
 ###Installation
-The installation is a one-step process, simply requiring to add the sample into your project's structure.
+The installation is a one-step process, simply add the sample into your project's structure.
 
 Open config.php and replace everything within the quotes including the curly braces with a valid api key obtained for free from accusoft.com.
 
@@ -31,9 +31,9 @@ php app.php mode=Operation inputFile=source Image outputFile = Output Image afte
 	php app.php mode=reduce inputFile=../console/newimage.jpeg  outputFile=images/reducedImage.jpeg
 	
 ###Explanation
-The sample code package is a fully functioning example of the ACS compress service. The call to the API is made within app.php that Walkthrough of the contents and verify if the input file is an image with a correct path.
+The sample code package is a fully functioning example of the ACS compression service. The call to the API is made within app.php that Walkthrough of the contents and verify if the input file is an image with a correct path.
 
-####Prepare data to pass into CURL using function reduce($input,$output) , Which input is the source image and the output will the image after compression.
+####Prepare data to pass into CURL using function reduce($input,$output) , in which input is the source image, and output is the image after compression.
 
     $image = file_get_contents($input);
     $imageType = mime_content_type($input);
