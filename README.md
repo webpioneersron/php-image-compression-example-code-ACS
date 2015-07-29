@@ -34,9 +34,10 @@ From within the subdirectory where you installed this code example, type
 	php app.php mode=reduce inputFile=../console/newimage.jpeg outputFile=images/reducedImage.jpeg
 	
 ###Explanation
-The sample code package is a fully functioning example of the ACS compression service. The call to the API is made within app.php that Walkthrough of the contents and verify if the input file is an image with a correct path.
+The sample code package is a fully functioning example of the ACS compression service. The call to the API is made within **app.php**, which verifies that the input is a valid path to an image file and then it makes a call to the compress API using that image.
 
-####Prepare data to pass into CURL using function reduce($input,$output) , in which input is the source image, and output is the image after compression.
+####Prepare the data to pass into CURL
+Use function reduce($input,$output), in which input is the source image, and output is the image after compression.
 
     $image = file_get_contents($input);
     $imageType = mime_content_type($input);
