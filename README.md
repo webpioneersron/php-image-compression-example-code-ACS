@@ -25,7 +25,7 @@ From within the subdirectory where you installed this code example, type
 
     php app.php mode=reduce|help inputFile=<file> outputFile=<file>
 
-            mode: reduce (or help to display this information)
+            mode: reduce (or help to show more information)
             inputFile: path to your image file, including filename
             outputFile: path to your output file, including the filename
 
@@ -78,8 +78,10 @@ Use function reduce($input,$output), in which input is the source image, and out
 	
     //create the new compressed image.
     $newImage = file_put_contents( $output, file_get_contents($uri));
+
 ###Note
 You will need to have the PHP curl library,GD Graphics Library and the fileinfo extension installed for this sample code to work. Most Linux based web hosts have these installed by default.
+
 ###Support
 If you have questions, please visit our online [help center](https://accusofthelp.zendesk.com/hc/en-us).
 
