@@ -78,7 +78,8 @@ Use function reduce($input,$output), in which input is the source image, and out
 	
     //create the new compressed image.
     $newImage = file_put_contents( $output, file_get_contents($uri));
-
+###Note
+You will need to have the PHP curl library,GD Graphics Library and the fileinfo extension installed for this sample code to work. Most Linux based web hosts have these installed by default.
 ###Support
 If you have questions, please visit our online [help center](https://accusofthelp.zendesk.com/hc/en-us).
 
