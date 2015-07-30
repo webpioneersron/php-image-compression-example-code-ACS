@@ -1,3 +1,3 @@
 <?php
-define("ACS_API_KEY", "{{Insert Your ACS Key Here}}");
+define("ACS_API_KEY", "{{ valid key here }}");
 ?>
